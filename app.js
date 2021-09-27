@@ -24,7 +24,7 @@ app.get('/kontakt', (req, res) => {
 
     const title = generateTitle()
 
-    res.render('contact', {
+    res.render('kontakt', {
         pageTitle: title,
 
     })
