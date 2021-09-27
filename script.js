@@ -1,4 +1,4 @@
-requestAnimationFrame('./utils')
+const utils = require('./utils')
 
-greeting()
-add(4, 5)
+utils.greeting()
+utils.add(4, 5)
