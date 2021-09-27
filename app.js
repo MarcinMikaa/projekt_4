@@ -20,11 +20,21 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/kontakt', (req, res) => {
+app.get('/contact', (req, res) => {
 
     const title = generateTitle()
 
-    res.render('kontakt', {
+    res.render('contact', {
+        pageTitle: title,
+
+    })
+})
+
+app.get('/about', (req, res) => {
+
+    const title = generateTitle()
+
+    res.render('about', {
         pageTitle: title,
 
     })
