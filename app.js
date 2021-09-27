@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/contact', (req, res) => {
+app.get('contact', (req, res) => {
     res.send('<html> <title>...')
 })
 
