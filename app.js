@@ -40,4 +40,14 @@ app.get('/about', (req, res) => {
     })
 })
 
+app.get('/form', (req, res) => {
+
+    const title = generateTitle()
+
+    res.render('form', {
+        pageTitle: title,
+
+    })
+})
+
 app.listen(port)
