@@ -1,4 +1,5 @@
 const express = require('express')
+const { title } = require('process')
 const port = process.env.PORT || 3000
 
 const generateTitle = () => {
@@ -19,10 +20,14 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/kontakt', (req, res) => {
 
+    const title = generateTitle()
 
-app.get('contact', (req, res) => {
-    res.send('<html> <title>...')
+    res.render('contact', {
+        pageTitle: title,
+
+    })
 })
 
 app.listen(port)
