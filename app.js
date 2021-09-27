@@ -40,11 +40,21 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/form', (req, res) => {
+app.get('/signup', (req, res) => {
 
     const title = generateTitle()
 
-    res.render('form', {
+    res.render('signup', {
+        pageTitle: title,
+
+    })
+})
+
+app.get('/login', (req, res) => {
+
+    const title = generateTitle()
+
+    res.render('login', {
         pageTitle: title,
 
     })
